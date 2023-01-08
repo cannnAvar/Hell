@@ -11,13 +11,11 @@ set(PROJECT_SOURCES
         ${PROJECT_SOURCE_DIR}/main.cpp
         ${PROJECT_SOURCE_DIR}/vec.cpp
         )
-set(PROJECT_LIB ${PROJECT_DIR}/vendor)
-set(PROJECT_LIB_INCLUDES 
-        ${PROJECT_LIB_INCLUDES}/spdlog/include)
+
 
 set(PROJECT_HEADERS 
         ${PROJECT_INCLUDE_DIR}/vec.hpp
-        )
+        ${PROJECT_INCLUDE_DIR}spdlog/)
 
 include_directories(${PROJECT_INCLUDE_DIR} ${PROJECT_LIB_INCLUDES})
 
